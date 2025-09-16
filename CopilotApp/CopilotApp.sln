@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopilotApp", "CopilotApp\CopilotApp.csproj", "{9BC6BE07-7CA7-43F1-9341-8CD0927837EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6BB093EE-FA4F-476D-8A77-C168FE58E321}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BC6BE07-7CA7-43F1-9341-8CD0927837EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC6BE07-7CA7-43F1-9341-8CD0927837EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC6BE07-7CA7-43F1-9341-8CD0927837EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BC6BE07-7CA7-43F1-9341-8CD0927837EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+﻿services:
+  copilotapp:
+    image: copilotapp
+    build:
+      context: .
+      dockerfile: CopilotApp/Dockerfile
+
