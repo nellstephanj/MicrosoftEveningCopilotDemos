@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frog vs Bugs - River Battle</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- p5.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <!-- p5.sound library DISABLED due to worklet issues when running locally -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script> -->
+    <!-- p5.play library for sprite collision detection - REMOVED FOR DEBUGGING -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/molleindustria/p5.play/lib/p5.play.js"></script> -->
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>🐸 Frog vs Bugs 🐛</h1>
+            <div class="game-stats">
+                <span id="score">Score: 0</span>
+                <span id="lives">Lives: 3</span>
+                <span id="level">Level: 1</span>
+            </div>
+        </div>
+        
+        <div id="game-canvas"></div>
+        
+        <div class="game-controls">
+            <p>Use ARROW KEYS to move • SPACEBAR to shoot • Enter to restart</p>
+        </div>
+        
+        <div id="game-over-screen" class="screen" style="display: none;">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <button onclick="restartGame()">Play Again</button>
+        </div>
+        
+        <div id="start-screen" class="screen">
+            <h2>🐸 Frog vs Bugs 🐛</h2>
+            <p>Help the brave frog defend the river from venomous bugs!</p>
+            <ul class="instructions">
+                <li>Use arrow keys to move your frog</li>
+                <li>Press spacebar to shoot at bugs</li>
+                <li>Dodge different types of venom</li>
+                <li>Survive as long as possible!</li>
+            </ul>
+            <button onclick="startGame()">Start Game</button>
+        </div>
+    </div>
+    
+    <!-- Game scripts -->
+    <script src="js/game.js"></script>
+    <script src="js/frog.js"></script>
+    <script src="js/bug.js"></script>
+    <script src="js/projectile.js"></script>
+    <script src="js/powerup.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/audio.js"></script>
+</body>
+</html>
