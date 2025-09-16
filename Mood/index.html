@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood - Heavenly Combat</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loading-content">
+            <h1>MOOD</h1>
+            <p>Loading heavenly arsenal...</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        
+        <!-- Game UI -->
+        <div id="game-ui">
+            <div id="crosshair"></div>
+            
+            <div id="hud">
+                <div class="hud-left">
+                    <div id="health-display">
+                        <span class="label">DIVINE HEALTH</span>
+                        <div id="health-bar">
+                            <div id="health-fill"></div>
+                        </div>
+                        <span id="health-text">100</span>
+                    </div>
+                </div>
+                
+                <div class="hud-right">
+                    <div id="ammo-display">
+                        <span id="ammo-count">30</span>
+                        <span class="label">/ 120</span>
+                    </div>
+                    <div id="weapon-name">Celestial Rifle</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu System -->
+        <div id="main-menu">
+            <div class="menu-content">
+                <h1 class="game-title">MOOD</h1>
+                <p class="subtitle">Fight for Heaven</p>
+                <div class="menu-buttons">
+                    <button id="start-game" class="menu-btn">START MISSION</button>
+                    <button id="settings" class="menu-btn">SETTINGS</button>
+                    <button id="controls" class="menu-btn">CONTROLS</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pause Menu -->
+        <div id="pause-menu" style="display: none;">
+            <div class="menu-content">
+                <h2>PAUSED</h2>
+                <div class="menu-buttons">
+                    <button id="resume-game" class="menu-btn">RESUME</button>
+                    <button id="restart-game" class="menu-btn">RESTART</button>
+                    <button id="exit-game" class="menu-btn">EXIT TO MENU</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="game-over" style="display: none;">
+            <div class="menu-content">
+                <h2 id="game-over-title">DIVINE VICTORY</h2>
+                <p id="game-over-message">You have cleansed heaven of darkness!</p>
+                <div id="score-display">
+                    <p>Score: <span id="final-score">0</span></p>
+                    <p>Enemies Defeated: <span id="enemies-defeated">0</span></p>
+                </div>
+                <div class="menu-buttons">
+                    <button id="play-again" class="menu-btn">PLAY AGAIN</button>
+                    <button id="main-menu-btn" class="menu-btn">MAIN MENU</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls Help -->
+    <div id="controls-help" style="display: none;">
+        <div class="controls-content">
+            <h3>DIVINE CONTROLS</h3>
+            <div class="controls-grid">
+                <div class="control-item">
+                    <span class="key">W A S D</span>
+                    <span class="action">Movement</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">Mouse</span>
+                    <span class="action">Look Around</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">Left Click</span>
+                    <span class="action">Fire Weapon</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">R</span>
+                    <span class="action">Reload</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">Space</span>
+                    <span class="action">Jump</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">Shift</span>
+                    <span class="action">Sprint</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">ESC</span>
+                    <span class="action">Pause/Menu</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">1-4</span>
+                    <span class="action">Change Weapon</span>
+                </div>
+            </div>
+            <button id="close-controls" class="menu-btn">CLOSE</button>
+        </div>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
